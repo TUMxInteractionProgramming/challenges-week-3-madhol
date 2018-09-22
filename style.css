@@ -1,0 +1,174 @@
+* {
+  background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+/* styling the right part*/
+#channels {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 40%;
+  bottom: 0;
+  top:0;
+  background-color: white;
+  list-style-type: none;
+}
+
+/* styling the left part*/
+#chat {
+  position: absolute;
+  right: 0px;
+  width: 60%;
+  height: 100%;
+
+/* CHANNELS LIST*/
+}
+#channels-list .channel-meta /*PICTURES*/ {
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+#channels-list li, .message p, .my-message p {
+ background-color: white;
+ padding: 16px;
+ font-size: 16px;
+}
+#channels-list .selected { /*for my message*/
+  border-left: 4px solid #44618e;
+  color: #44618e;
+}
+#channels-list img {
+vertical-align: middle;
+/*for styling the star img */
+}
+
+/*APP BAR*/
+#app-bar, #app-bar2 {
+   display: flex;
+   justify-content: space-between;
+   height: 70px;
+   line-height: 70px;
+   overflow: hidden;
+ }
+#app-bar2 img{
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+
+#app-bar, .app-bar,  #app-bar small, #app-bar strong,
+#app-bar2 small, #app-bar2 strong, #changing {
+  background-color: #44618e;
+  color: white;
+  width: 100%;
+}
+
+/*MESSAGES*/
+.message em, .my-message  em {
+font-size: larger;
+font-style: normal;
+}
+.message b, .my-message b,.app-bar strong, button {
+text-transform: uppercase;
+}
+
+a {
+color: inherit;
+}
+#chat-scroll{
+  overflow: auto;
+}
+.message, .my-message {
+  width: 80%;
+  margin-top: 8px;
+  position: relative;
+}
+.message h3, .my-message h3 {
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+}
+.message p, .my-message  p {
+  padding: 16px;
+}
+.message button, .my-message button {
+  background-color: #CDDC39;
+  color: black;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.message {
+  margin-left: 2.5%;
+}
+.my-message {
+  margin-left: 17.5%;
+}
+
+/*STYLING THE BOTTOM*/
+#tab-bar, #chat-bar{
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+}
+#chat-bar{
+  height: 50px;
+}
+#tab-bar .selected  {
+  border-bottom: 4px solid #44618e;
+  color: #44618e;
+}
+#emojis{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left:16px;
+  bottom: 35px;
+  border-color: black;
+  background-color: white;
+  padding: 16px;
+  border: 1px solid black;
+  font-size: 28px;
+  text-align: left;
+  overflow: auto;
+}
+#emojis-button img{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: block;
+}
+
+#chat-bar button{
+  position: relative;
+  background-color: white;
+  border:hidden;
+  padding: 16px;
+  width: 100%;
+}
+#tab-bar button {
+  text-transform: uppercase;
+  background-color: white;
+  border:hidden;
+  font-size: 13px;
+  height: 72px;
+  padding: 16px;
+  width:33.33%;
+
+}
+#tab-bar img {
+   display: block;
+   margin: auto;
+   margin-bottom: 4px;
+}
+/*LINES IN CHANNELS LIST*/
+hr {
+     border: 0;
+     height: 0.5px;
+     border-bottom: 1px dotted lightgrey;
+}
